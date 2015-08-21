@@ -17,8 +17,8 @@ requirejs.config({
 });
 
 requirejs(
-  ["dependencies", "firebase", "authentication"],
-  function(dependencies, fb, auth) {
+  ["dependencies", "firebase", "authentication","get-data"],
+  function(dependencies, fb, auth, getData) {
 
     var ref = new Firebase("https://sallys-weather-app.firebaseio.com");
     var authData = ref.getAuth();
