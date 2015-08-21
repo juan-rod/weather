@@ -6,4 +6,19 @@ define(function(require) {
   var fb = require("firebase");
   var get = require("get-data");
   var pop = require("populate-dom");
+
+var test = function(data){
+  console.log(data);
+};
+
+get.getWeather(37206, test);
+
+
+
+
+
+
+
+
+
 });
