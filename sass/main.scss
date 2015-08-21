@@ -1,3 +1,5 @@
+$font-stack: 'Lato', sans-serif;
+$primary-color: #333;
 
   // NAVAGATION BAR
 
@@ -39,12 +41,13 @@
 
 
 
+// weather content /// 
 
-// body {
-//   font: 100% $font-stack;
-//   color: $primary-color;
-//   padding-top: 56px;
-// }
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  padding-top: 5px;
+}
 
 .weatherContainer{
   //border: 1px solid #eee;

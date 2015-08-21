@@ -31,6 +31,11 @@
   display: -ms-flexbox;
   display: flex; }
 
+body {
+  font: 100% "Lato", sans-serif;
+  color: #333;
+  padding-top: 5px; }
+
 .weatherContainer {
   height: 470px;
   width: 600px;
