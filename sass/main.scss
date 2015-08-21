@@ -1,7 +1,8 @@
+
   // NAVAGATION BAR
 
 .navbar-default {
-  margin-top: 20px;
+  margin-top: 5px;
   background-color: slateGray;
 }
 
@@ -36,17 +37,52 @@
  display:         flex;
 }
 
-    // MAIN CONTAINER 
-.mainContainer{
-  background-color: #FEFAC0; 
-  border: 2px white solid;
-  padding: 20px 20px 20px 20px;
-  margin: 0 50px 0 20px;
-  box-shadow: 10px 5px 5px black;
-  text-align: center;
+
+
+
+// body {
+//   font: 100% $font-stack;
+//   color: $primary-color;
+//   padding-top: 56px;
+// }
+
+.weatherContainer{
+  //border: 1px solid #eee;
+  height:470px;
+  width: 600px;
+  margin-top: 25px;
+}
+.weatherContent{
+  //padding-left: 40px;
+  border:1px dotted #fff;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+    -moz-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+    box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+
 }
 
-  // WOULD WE RATHER HAVE A WEATHER PIC IN BACKGROUND?
-body{
-  background-color: lightGray; 
+.todayInfo{
+  height:260px;
+  border: 1px dotted black;
 }
+h1{
+  font-size: 52px;
+}
+.multipleDay{
+  border: 1px dotted black;
+  height: 200px;
+}
+.multipleDayContent{
+  border: 1px dotted red;
+  height: 100%;
+}
+
+.dayOfTheWeek{
+  border: 1px dotted green;
+}
+.weatherCondition{
+  border: 1px dotted blue;
+}
+
