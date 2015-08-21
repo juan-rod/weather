@@ -20,6 +20,6 @@
     "firebase": "~2.2.9",
     "lodash": "~3.10.1",
     "require-handlebars-plugin": "~0.11.3",
-    "q": "~1.0.1",
+    "q": "~1.0.1"
   }
 }
