@@ -1,0 +1,91 @@
+$font-stack: 'Lato', sans-serif;
+$primary-color: #333;
+
+  // NAVAGATION BAR
+
+.navbar-default {
+  margin-top: 5px;
+  background-color: slateGray;
+}
+
+.navbar-default .navbar-nav> li > a {
+  color: white; /*Change text color here*/
+  font-size: 20px;
+    }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav{
+  color: #FEFAC0;  /*Text hover color on navbar*/
+}
+
+
+.navbar-default .navbar-brand {
+    color: #fff;   /*Home text color*/
+    font-size: 40px;
+}
+
+.navbar-default .navbar-brand:hover{
+  color: #FEFAC0;  /*Home hover color*/
+}
+
+.dropdown-menu > li > a:hover,{
+  color: #262626;
+  background-color: darkGray;  /*change color of links in drop down*/
+   }
+
+.row-eq-height {
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display:         flex;
+}
+
+
+
+// weather content /// 
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  padding-top: 5px;
+}
+
+.weatherContainer{
+  //border: 1px solid #eee;
+  height:470px;
+  width: 600px;
+  margin-top: 25px;
+}
+.weatherContent{
+  //padding-left: 40px;
+  border:1px dotted #fff;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+    -moz-box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+    box-shadow: 1px 6px 18px -2px rgba(97,97,97,1);
+
+}
+
+.todayInfo{
+  height:260px;
+  border: 1px dotted black;
+}
+h1{
+  font-size: 52px;
+}
+.multipleDay{
+  border: 1px dotted black;
+  height: 200px;
+}
+.multipleDayContent{
+  border: 1px dotted red;
+  height: 100%;
+}
+
+.dayOfTheWeek{
+  border: 1px dotted green;
+}
+.weatherCondition{
+  border: 1px dotted blue;
+}
+

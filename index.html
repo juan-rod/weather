@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <title>Weather-App</title>
+  </head>
+
+
+  
+  <body>
+    <!-- Nav Content Area -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-default"> 
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navbar-btn homeclr" href="index.html">Today's Weather</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-btn" id="bs-example-navbar-collapse-1">
+          
+
+          <ul class="nav navbar-nav navbar-right">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="5-digit Zip Code">
+              </div>
+              <button class="btn btn-default" id="searchBtn" >Search</button>
+            </form>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+      
+    <div class="container-fluid weatherContainer">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-12 weatherContent">
+            <div class="col-md-12 todayInfo">
+
+
+            <!--dayWeather.hbs -->
+
+
+             </div><!-- /todayInfo-->
+            <div class="row">
+              <div class="col-md-12 multipleDay">
+                
+                <!--threeDayWeather.hbs -->
+
+              </div><!-- /multipleDay-->
+            </div><!-- /row-->
+        </div><!-- /weatherContent-->
+      </div>
+    </div>
+  </div> <!-- /container-fluid weatherContainer-->
+
+     
+
+
+
+
+
+<script data-main="javascripts/main" src="./lib/bower_components/requirejs/require.js"></script>
+</body>
+</html>
