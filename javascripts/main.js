@@ -20,4 +20,18 @@ requirejs(
   ["dependencies", "authentication"],
   function(dependencies, auth) {
 
+     if (authData === null) {
+      ref.authWithOAuthPopup("github", function(error, authData) {
+        if (error) {
+          console.log("Login Failed!", error);
+        } else {
+          console.log("Authenticated successfully with payload:", authData);
+          auth.setUid(authData.uid);
+        }
+      });
+    } else {
+      auth.setUid(authData.uid);
+    }
+
+
   });//end of main require function
