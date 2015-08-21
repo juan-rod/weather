@@ -29,7 +29,9 @@
           <ul class="nav navbar-nav navbar-right">
             <form class="navbar-form navbar-left" role="search">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="5-digit Zip Code">
+                <div id="msg">
+                </div>
+                <input type="number" pattern="\d{5}" maxlength="5" class="form-control" placeholder="5-digit Zip Code" id="zipInput">
               </div>
               <button class="btn btn-default" id="searchBtn" >Search</button>
             </form>

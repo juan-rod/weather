@@ -8,7 +8,7 @@ return {
         url: queryURL
         }).done(function(data) {
              callback.call(this,data);
-          });        
+          });              
     }
   };
 });
