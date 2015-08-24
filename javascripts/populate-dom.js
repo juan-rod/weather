@@ -1,9 +1,12 @@
 define(function(require) {
   var $ = require("jquery");
+  var templates = require("get-templates");
 
-  // $('#getWeather').click(function(data) {
-  //   require(dayWeatherTpl) {
-  //     $('.todayInfo').html(weatherHBS(data));
-  //   };
-  // });
-});
+  return {
+    showWeather: function(data) {
+      require(['hbs!../templates/dayWeatherTpl'], function(dayWeatherTpl) {
+        $('.todayInfo').html(dayWeatherTpl(data));
+      });
+    }
+  };//end return
+});//end module
