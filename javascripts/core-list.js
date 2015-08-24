@@ -7,6 +7,7 @@ define(function(require) {
   var chkinput = require("check-input");
   var get = require("get-data");
   var pop = require("populate-dom");
+  var templates = require("get-templates");
 
   var test = function(data){
     console.log("jesse - data from server", data);
@@ -15,7 +16,6 @@ define(function(require) {
   $("#searchBtn").on("click", function(){
     var zipCode = chkinput.chkinput();
     console.log(zipCode);
-    get.getWeather(zipCode, test);
+    get.getWeather(zipCode, 1, pop.showWeather);
   });
-
 });
