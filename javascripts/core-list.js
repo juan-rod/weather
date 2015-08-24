@@ -16,7 +16,6 @@ define(function(require) {
   $("#getWeather").on("click", function(){
     var zipCode = chkinput.chkinput();
     console.log(zipCode);
-    get.getWeather(zipCode, test);
-    get.getWeather(zipCode, pop.showWeather(data));
+    get.getWeather(zipCode, pop.showWeather);
   });
 });
