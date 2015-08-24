@@ -42,7 +42,6 @@ body {
   margin-top: 25px; }
 
 .weatherContent {
-  border: 1px dotted #fff;
   height: 100%;
   width: 100%;
   -webkit-box-shadow: 1px 6px 18px -2px #616161;
@@ -50,24 +49,32 @@ body {
   box-shadow: 1px 6px 18px -2px #616161; }
 
 .todayInfo {
-  height: 260px;
-  border: 1px dotted black; }
+  height: 260px; }
 
 h1 {
   font-size: 52px; }
 
 .multipleDay {
-  border: 1px dotted black;
   height: 200px; }
 
 .multipleDayContent {
-  border: 1px dotted red;
-  height: 100%; }
+  border: 1px solid #eee;
+  height: 90%;
+  -webkit-box-shadow: 0px 0px 6px 0px #dddddd;
+  -moz-box-shadow: 0px 0px 6px 0px #dddddd;
+  box-shadow: 0px 0px 6px 0px #dddddd; }
 
 .dayOfTheWeek {
-  border: 1px dotted green; }
+  text-align: center; }
 
 .weatherCondition {
-  border: 1px dotted blue; }
+  height: 30px;
+  text-align: center; }
+
+.weatherImg {
+  text-align: center; }
+
+.weatherTemp {
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

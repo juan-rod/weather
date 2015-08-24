@@ -13,7 +13,7 @@
   <body>
     <!-- Nav Content Area -->
     <div class="container-fluid">
-      <nav class="navbar navbar-default"> 
+      <nav class="navbar "> 
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -31,7 +31,7 @@
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="5-digit Zip Code">
               </div>
-              <button class="btn btn-default" id="searchBtn" >Search</button>
+              <button type="button" class="btn btn-default" id="getWeather" >Search</button>
             </form>
           </ul>
         </div>
@@ -42,19 +42,19 @@
       
     <div class="container-fluid weatherContainer">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="col-md-12 weatherContent">
             <div class="col-md-12 todayInfo">
-
-
             <!--dayWeather.hbs -->
-
+              
 
              </div><!-- /todayInfo-->
             <div class="row">
-              <div class="col-md-12 multipleDay">
+              <div class="col-md-12 multipleDay hidden">
                 
                 <!--threeDayWeather.hbs -->
+
+
 
               </div><!-- /multipleDay-->
             </div><!-- /row-->

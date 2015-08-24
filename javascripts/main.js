@@ -38,4 +38,11 @@ requirejs(
       require(["core-list"], function(corelist) {});
     }
 
+$('button').on("click", function(){
+  $(".multipleDay").toggleClass("hidden");
+});
+
+
+
+
   });//end of main require function
