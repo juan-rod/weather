@@ -78,4 +78,9 @@ h1 {
 .weatherTemp {
   text-align: center; }
 
+.twitter-share-button {
+  font-size: 2em;
+  color: white;
+  margin: 0 1em 0 1em; }
+
 /*# sourceMappingURL=main.css.map */

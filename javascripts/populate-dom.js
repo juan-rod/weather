@@ -14,14 +14,10 @@ define(function(require) {
         "icon": data.list[0].weather[0].icon
      };
      console.log(myData);
-      require(['hbs!../templates/dayWeather'], function(dayWeather) {
-        $('.todayInfo').html(dayWeather(myData));
-      });
+      $('.todayInfo').html(templates.dayWeatherTpl(myData));
     },
     show3DayWeather: function(data) {
-
      var allData = [];
-
       for (var i = 1; i < data.list.length; i++) {
       var obj = {
         "name": data.city.name,
@@ -33,16 +29,11 @@ define(function(require) {
         };
         allData.push(obj);
       }
-
-      require(['hbs!../templates/threeDayWeather'], function(dayWeather) {
-        $('.multipleDay').html(dayWeather(allData));
-      });
+      $('.multipleDay').html(templates.threeDayWeatherTpl(allData));
     },
     
     show7DayWeather: function(data) {
-
      var allData = [];
-
       for (var i = 1; i < data.list.length; i++) {
       var obj = {
         "name": data.city.name,
@@ -54,10 +45,7 @@ define(function(require) {
         };
         allData.push(obj);
       }
-
-      require(['hbs!../templates/threeDayWeather'], function(dayWeather) {
-        $('.multipleDay').html(dayWeather(allData));
-      });
+      $('.multipleDay').html(templates.threeDayWeatherTpl(allData));
     }
   }; //end return
 }); //end module

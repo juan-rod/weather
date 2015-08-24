@@ -15,6 +15,7 @@ define(function(require) {
 
   $("#searchBtn").on("click", function(){
     var zipCode = chkinput.chkinput();
+    $(".weatherContainer").removeClass("hidden");
     console.log(zipCode);
     get.getWeather(zipCode, 1, pop.showWeather);
   });

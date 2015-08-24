@@ -7,7 +7,14 @@
     <meta charset="utf-8">
     <title>Weather-App</title>
   </head>
-
+<div id="fb-root"></div>
+ <script>(function(d, s, id) {
+   var js, fjs = d.getElementsByTagName(s)[0];
+   if (d.getElementById(id)) return;
+   js = d.createElement(s); js.id = id;
+   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+   fjs.parentNode.insertBefore(js, fjs);
+ }(document, 'script', 'facebook-jssdk'));</script>
 
   
   <body>
@@ -35,6 +42,10 @@
               </div>
               <button type="button" class="btn btn-default" id="searchBtn">Search</button>
             </form>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-text="Sally's Awesome Weather App">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+           <div class="fb-share-button" data-href="http://192.168.33.10:8080/" 
+             data-layout="button_count"></div>
           </ul>
         </div>
       </nav>
@@ -42,7 +53,7 @@
 
 
       
-    <div class="container-fluid weatherContainer">
+    <div class="container-fluid weatherContainer hidden">
       <div class="row">
         <div class="col-md-12">
           <div class="col-md-12 weatherContent">
