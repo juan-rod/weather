@@ -1,36 +1,13 @@
-.navbar-default {
-  margin-top: 5px;
-  background-color: slateGray; }
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/page-loader.gif") 50% 50% no-repeat #f9f9f9; }
 
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  /*Change text color here*/
-  font-size: 20px; }
-
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav {
-  color: #FEFAC0;
-  /*Text hover color on navbar*/ }
-
-.navbar-default .navbar-brand {
-  color: #fff;
-  /*Home text color*/
-  font-size: 40px; }
-
-.navbar-default .navbar-brand:hover {
-  color: #FEFAC0;
-  /*Home hover color*/ }
-
-.dropdown-menu > li > a:hover {
-  color: #262626;
-  background-color: darkGray;
-  /*change color of links in drop down*/ }
-
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-
+/*// weather content /// */
 body {
   font: 100% "Lato", sans-serif;
   color: #333;
@@ -42,6 +19,8 @@ body {
   margin-top: 25px; }
 
 .weatherContent {
+  /*//padding-left: 40px;*/
+  /*//border:1px dotted #fff;*/
   height: 100%;
   width: 100%;
   -webkit-box-shadow: 1px 6px 18px -2px #616161;
@@ -49,7 +28,8 @@ body {
   box-shadow: 1px 6px 18px -2px #616161; }
 
 .todayInfo {
-  height: 260px; }
+  height: 260px;
+  /*//border: 1px dotted black;*/ }
 
 h1 {
   font-size: 52px; }

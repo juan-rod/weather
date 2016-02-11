@@ -9,34 +9,61 @@ define(function(require) {
   var pop = require("populate-dom");
   var templates = require("get-templates");
 
-  var test = function(data){
-    console.log("jesse - data from server", data);
-  };
 
-  $("#searchBtn").on("click", function(){
-    var zipCode = chkinput.chkinput();
-    $(".weatherContainer").removeClass("hidden");
-    console.log(zipCode);
-    get.getWeather(zipCode, 1, pop.showWeather);
-  });
 
-  $(document).on("click",'#3Day', function(){
-    var zipInput = $("#zipInput").val();
 
-    console.log('click');
+return function () {
+//   $(window).load(function() {
+//   $(".loader").fadeOut("slow");
+// });
+  navigator.geolocation.getCurrentPosition(function(position) {
+    var lat = position.coords.latitude.toFixed(3);
+    var long = position.coords.longitude.toFixed(3);
 
-    get.getWeather(zipInput, 4, pop.show3DayWeather);
+    get.getWeather(lat,long);
+     $(".loader").fadeOut("slow");
 
-  $(".multipleDay").toggleClass("hidden");
-});
+    console.log("lat", lat);
+    console.log("long", long);
+    });
+};
 
-$(document).on("click",'#7Day', function(){
-  var zipInput = $("#zipInput").val();
-   get.getWeather(zipInput, 8, pop.show7DayWeather);
-    $(".multipleDay").toggleClass("hidden");
+
+
+
+
+
+
+
+
+//   var test = function(data){
+//     console.log("jesse - data from server", data);
+//   };
+
+//   $("#searchBtn").on("click", function(){
+//     var zipCode = chkinput.chkinput();
+//     $(".weatherContainer").removeClass("hidden");
+//     console.log(zipCode);
+//     get.getWeather(zipCode, 1, pop.showWeather);
+//   });
+
+//   $(document).on("click",'#3Day', function(){
+//     var zipInput = $("#zipInput").val();
+
+//     console.log('click');
+
+//     get.getWeather(zipInput, 4, pop.show3DayWeather);
+
+//   $(".multipleDay").toggleClass("hidden");
+// });
+
+// $(document).on("click",'#7Day', function(){
+//   var zipInput = $("#zipInput").val();
+//    get.getWeather(zipInput, 8, pop.show7DayWeather);
+//     $(".multipleDay").toggleClass("hidden");
   
 
-});
+// });
 
 
 });

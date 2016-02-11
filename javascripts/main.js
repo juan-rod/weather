@@ -17,26 +17,9 @@ requirejs.config({
 });
 
 requirejs(
-  ["dependencies", "firebase", "authentication","get-data"],
-  function(dependencies, fb, auth, getData) {
+  ["dependencies", "core-list"],
+  function(dependencies, coreList) {
 
-    var ref = new Firebase("https://sallys-weather-app.firebaseio.com");
-    var authData = ref.getAuth();
-
-    if (authData === null) {
-      ref.authWithOAuthPopup("github", function(error, authData) {
-        if (error) {
-          console.log("Login Failed!", error);
-        } else {
-          console.log("Authenticated successfully with payload:", authData);
-          auth.setUid(authData.uid);
-          require(["core-list"], function(corelist) {});
-        }
-      });
-    } else {
-      auth.setUid(authData.uid);
-      require(["core-list"], function(corelist) {});
-    }
-
+    coreList();
 
   });//end of main require function
