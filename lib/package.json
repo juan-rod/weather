@@ -14,7 +14,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Juan Rodriguez",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan-rod/weather.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juan-rod/weather/issues"
+  },
+  "homepage": "https://github.com/juan-rod/weather#readme",
   "description": ""
 }

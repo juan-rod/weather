@@ -2,40 +2,23 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/weather-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,100,800,300' rel='stylesheet' type='text/css'>
     <meta charset="utf-8"> 
   </head>  
   <body>
-     <div class="loader"></div>
-    <div class="container-fluid weatherContainer">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
-          <div class="col-md-12 weatherContent">
-            <div class="col-md-12 todayInfo">
-
-
+        <div class="loader">
+          <!--load content -->
+        </div>
+        <div id="dayScale" class="slider"></div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 todayInfo">
             <!--dayWeather.hbs -->
-
-
-             </div><!-- /todayInfo-->
-            <div class="row">
-              <div class="col-md-12 multipleDay hidden">
-                
-                <!--threeDayWeather.hbs -->
-
-              </div><!-- /multipleDay-->
-            </div><!-- /row-->
-        </div><!-- /weatherContent-->
-      </div>
+        </div><!--todayInfo-->
+      </div><!--row-->
     </div>
-  </div> <!-- /container-fluid weatherContainer-->
-
-     
-
-
-
-
 
 <script data-main="javascripts/main" src="./lib/bower_components/requirejs/require.js"></script>
 

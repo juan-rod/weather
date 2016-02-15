@@ -1,0 +1,67 @@
+$font-stack:'Work Sans', sans-serif;
+$primary-color: #333;
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('/images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+}
+
+/*// weather content /// */
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  padding-top: 5px;
+  /*background-color:red*/
+}
+#dayScale{
+  border: 1px solid red;
+  height:100%;
+  position: absolute;
+  width: 15%;
+}
+.todayInfo{
+  /*border: 4px dotted black;*/
+  height:100vh;
+}  
+.wi{
+  font-size: 30vh;
+  text-align: center;
+  top: 100px;
+  position: absolute;
+  opacity: .4;
+}
+
+.tempInfo{
+  /*border: 1px dotted black;*/
+  text-align: center;
+  height: 100vh;
+
+    h2{
+      font-size:100px;
+      font-weight: 100;
+    }
+    h5{
+      font-size: 50px;
+       font-weight: 100;
+    }
+}
+.locationInput{
+  /*border: 1px dotted black;*/
+  font-weight: 100;
+  font-size:15vw;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  p{
+    text-align: center;
+  }
+}
+.otherInfo{
+  /*border: 1px dotted black;*/
+}

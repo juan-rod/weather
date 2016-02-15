@@ -1,9 +1,9 @@
 {
   "name": "weather-app",
   "version": "0.0.0",
-  "homepage": "https://github.com/sqfish/weather-app",
+  "homepage": "https://github.com/juan-rod/weather.git",
   "authors": [
-    "Sally Fisher <sqfisher@gmail.com>"
+    "Juan Rodriguez <juan.j.rodriguez2@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [
@@ -20,6 +20,7 @@
     "firebase": "~2.2.9",
     "lodash": "~3.10.1",
     "require-handlebars-plugin": "~0.11.3",
-    "q": "~1.0.1"
+    "q": "~1.0.1",
+    "moment": "^2.11.2"
   }
 }
