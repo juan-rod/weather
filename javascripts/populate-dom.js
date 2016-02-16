@@ -4,34 +4,17 @@ define(function(require) {
   var moment = require("moment");
 
   var myDataArray =[];
-  
-  var now = moment().format();
-  console.log("now moments:",now);
 
-  var date = new Date();
-  var hours = date.getHours();
-  var time = date.getTime();
-  
-    console.log("date:",date);
-    console.log("time:",time);
-    console.log("hours:",hours);
-  
-  
-// var theyear = date.getFullYear();
-// var themonth = date.getMonth()+1;
-// var thetoday = date.getDate();
-// console.log("The time is:", time);
-// console.log("The year is:", theyear);
-// console.log("The month is:", themonth);
-// console.log("The day is:", thetoday);
   return {
     showWeather: function(data) {
+
       console.log(data);
       var fixedTemp = data.main.temp.toFixed(0);
       var fixedTempMin = data.main.temp_min.toFixed(0);
       var fixedTempMax = data.main.temp_max.toFixed(0);
       var fixedWind = data.wind.speed.toFixed(0);
       var id = data.weather[0].id;
+      
 
       var myData = {
         "name": data.name,
@@ -45,10 +28,10 @@ define(function(require) {
         "icon": id
      };
           myDataArray.push(myData);
+
           $('.todayInfo').html(templates.dayWeatherTpl(myData));
           icon();
     }
-   
   }; //end return
 
     function icon(){

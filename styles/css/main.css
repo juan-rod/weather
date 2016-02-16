@@ -10,7 +10,7 @@
 /*// weather content /// */
 body {
   font: 100% "Work Sans", sans-serif;
-  color: #333;
+  color: #eee;
   padding-top: 5px;
   /*background-color:red*/ }
 
@@ -20,21 +20,31 @@ body {
   position: absolute;
   width: 15%; }
 
+#slider {
+  top: 50px;
+  position: absolute; }
+
+.btn {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px; }
+
 .todayInfo {
   /*border: 4px dotted black;*/
   height: 100vh; }
 
 .wi {
-  font-size: 30vh;
+  font-size: 325px;
   text-align: center;
-  top: 100px;
+  /*top: 100px;*/
   position: absolute;
-  opacity: .4; }
+  opacity: .2; }
 
 .tempInfo {
   /*border: 1px dotted black;*/
   text-align: center;
-  height: 100vh; }
+  /*height: 100vh;*/
+  margin-top: 75px; }
   .tempInfo h2 {
     font-size: 100px;
     font-weight: 100; }
@@ -52,7 +62,14 @@ body {
   .locationInput p {
     text-align: center; }
 
-.otherInfo {
-  /*border: 1px dotted black;*/ }
+.greeting {
+  /*border: 2px dotted black;*/
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 7vw;
+  font-weight: 300; }
+  .greeting p {
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
