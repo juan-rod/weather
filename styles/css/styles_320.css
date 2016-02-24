@@ -76,6 +76,7 @@ body {
   .greeting p {
     text-align: center; }
 
+/**/
 .wi {
   font-size: 175px; }
 
@@ -85,14 +86,14 @@ body {
   .tempInfo .tempConditions {
     /*border: 2px dotted red;*/
     width: 100%;
-    margin: 25% 0;
+    margin: 35% 0 0 0;
     height: 325px;
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.46); }
     .tempInfo .tempConditions h2 {
-      font-size: 150px;
+      font-size: 40vw;
       font-weight: 100; }
     .tempInfo .tempConditions h5 {
-      font-size: 45px;
+      font-size: 8vw;
       font-weight: 100; }
 
 .locationInput {
